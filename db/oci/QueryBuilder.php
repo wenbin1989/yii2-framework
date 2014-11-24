@@ -153,9 +153,6 @@ EOD;
         if ($delete !== null) {
             $sql .= ' ON DELETE ' . $delete;
         }
-        if ($update !== null) {
-            throw new Exception('Oracle does not support ON UPDATE clause.');
-        }
 
         return $sql;
     }
